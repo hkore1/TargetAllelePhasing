@@ -39,4 +39,11 @@ Run `bash script2_map_to_supercontigs.sh <supercontig_directory> <read_directory
 
 Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step 1. 'read_directory' is the directory containing reads used for the initial HybPiper assembly.
 
+## Step 3: Generate phased sequences and extract exons and introns
+Run `script3_phase_extract_align.sh`
 
+This is a wrapper script to perform functions of 4 subscripts that:
+1. Phase alleles from IUPAC reference supercontigs (with WhatsHap)
+2. Generate separate fasta files for phased sequences (with bcftools)
+3. Replace variant sites outside the longest phase block with ambiguity codes (with haplonerate.py)
+4. Generate separate files for the intron, exon, and supercontig sequences for samples for default HybPiper, IUPAC-coded, and phased-allele data (with intron_exon_extractor.py)
