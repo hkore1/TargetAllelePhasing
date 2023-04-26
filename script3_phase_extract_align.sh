@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# A wrapper script to perform functions of 5 subscripts that:
+# A wrapper script to perform functions in 4 subscripts that:
 #		1. Phase alleles from IUPAC reference supercontigs (with WhatsHap)
 #		2. Generate separate fasta files for phased sequences (with bcftools)
 #		3. Replace variant sites outside the longest phase block with ambiguity codes (with haplonerate.py)
