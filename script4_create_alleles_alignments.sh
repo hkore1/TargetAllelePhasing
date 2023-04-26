@@ -1,13 +1,11 @@
 #!/bin/bash
 
-##############################
+
 # Author: Harvey Orel (modified from Matt Johnson - https://github.com/mossmatters/phyloscripts/blob/master/alleles_workflow/create_alleles_alignments.sh)
-#
 # Description: Script to generate cleaned/trimmed phased exon alignments from allele sequences generated in scripts 1-3.
-#
+
 # Usage: Run from directory with '2_Phased_Sequences/' folder in it.
-#
-##############################
+
 
 ### Parameters to set ###
 # Set output folder name
