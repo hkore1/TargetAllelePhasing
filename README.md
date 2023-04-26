@@ -32,6 +32,11 @@ If you have run HybPiper using a method that does not tar these files, then comm
 ## Step 1: Concatenate HybPiper2 supercontig and intronerate files
 Run `bash concat_hp2_supercontigs_and_introns_rename.sh <hp2_results_directory>`. 
 
-Note: 'hp2_results_directory' is a directory containing HP2 output folders for each.
+Note: 'hp2_results_directory' is a directory containing HP2 output folders for each sample in your dataset.
+
+## Step 2: Map reads to supercontig sequences to generate new IUPAC-coded ambiguity sequences
+Run `bash script2_map_to_supercontigs.sh <supercontig_directory> <read_directory> <number_of_CPUs>`.
+
+Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step 1. 'read_directory' is the directory containing reads used for the initial HybPiper assembly.
 
 
