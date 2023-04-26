@@ -4,6 +4,8 @@ Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts
 
 ## Dependencies:
 GATK: https://gatk.broadinstitute.org/hc/en-us
+
 Picard: https://github.com/broadinstitute/picard
+
 WhatsHap: https://whatshap.readthedocs.io/en/latest/
 
