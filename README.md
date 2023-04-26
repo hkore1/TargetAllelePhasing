@@ -42,7 +42,7 @@ Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step
 ## Step 3: Generate phased sequences and extract exons and introns
 Run `script3_phase_extract_align.sh`
 
-This is a wrapper script to perform functions of 4 subscripts that:
+This is a wrapper script to perform functions in 4 subscripts that:
 1. Phase alleles from IUPAC reference supercontigs (with WhatsHap)
 2. Generate separate fasta files for phased sequences (with bcftools)
 3. Replace variant sites outside the longest phase block with ambiguity codes (with haplonerate.py)
