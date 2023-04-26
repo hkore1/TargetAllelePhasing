@@ -47,3 +47,5 @@ This is a wrapper script to perform functions of 4 subscripts that:
 2. Generate separate fasta files for phased sequences (with bcftools)
 3. Replace variant sites outside the longest phase block with ambiguity codes (with haplonerate.py)
 4. Generate separate files for the intron, exon, and supercontig sequences for samples for default HybPiper, IUPAC-coded, and phased-allele data (with intron_exon_extractor.py)
+
+Note: Make sure to set the variable `Step4_subscript_path` as a path to 'subscript3.4_intron_exon_extractor.py'
