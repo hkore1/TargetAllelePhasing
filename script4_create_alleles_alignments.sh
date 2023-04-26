@@ -1,10 +1,22 @@
 #!/bin/bash
 
+##############################
+# Author: Harvey Orel (modified from Matt Johnson - https://github.com/mossmatters/phyloscripts/blob/master/alleles_workflow/create_alleles_alignments.sh)
+#
+# Description: Script to generate cleaned/trimmed phased exon alignments from allele sequences generated in scripts 1-3.
+#
+# Usage: Run from directory with '2_Phased_Sequences/' folder in it.
+#
+##############################
+
 ### Parameters to set ###
 # Set output folder name
 outfolder="phased_exon_alignments"
-		
 
+# List of genes and samples
+genelist=/data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/genelist.txt
+namelist=/data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/sample_list.txt
+		
 # Check to make sure script is being run from correct directory
 if [ ! -d 2_Phased_Sequences/ ]; then
   echo "Directory '2_Phased_Sequences' does not exist! Exiting..."
@@ -15,16 +27,14 @@ fi
 module load java/17.0.1
 module load parallel/20210322
 
-# Shell script to recreate the IUPAC ambiguity coded alignments for Artocarpus.
+# Create new directory.
 if [ ! -d 3_exon_alignments/ ]; then
 	mkdir -p 3_exon_alignments
 	rm -f 3_exon_alignments/*
 fi
 
-cd /data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/3_exon_alignments
-
-genelist=/data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/genelist.txt
-namelist=/data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/sample_list.txt
+#cd /data/gpfs/projects/punim1517/harvey_orel/projects/Rutaceae/Eriostemon_Group_analyses/7_allele_phasing/3_exon_alignments
+cd ~/3_exon_alignments # This should work but is untested, if failing here provide full path as above.
 
 ##########EXONS############
 
