@@ -20,7 +20,7 @@ trimAl: http://trimal.cgenomics.org
 ----------------------------------------------------
 For ease of use, we have compiled and packaged all of these programs (except for WhatsHap); they can be downloaded from [here](https://drive.google.com/file/d/1RCNR2igO-PDMy1WqSNhAQTiGFUOnn1a0/view?usp=sharing).
 
-WhatsHap should be installed using Anaconda, and the lines to activate conda environment containing WhatsHap should be altered in the wrapper 'script3_phase_extract_align.sh' or 'subscript3.1_phase_alleles_with_whatshap.sh' (the latter if you're running WhatsHap independently of other scripts).
+WhatsHap should be installed using Anaconda, and the lines to activate conda environment containing WhatsHap should be altered in the wrapper 'script3_phase_extract_align.sh' or 'subscript3.1_phase_alleles_with_whatshap.sh' (the latter is only necessary if you're running WhatsHap independently of other scripts).
 
 ## Before running the pipeline
 HybPiper must have already been run, using the `--run_intronerate` function to generate supercontigs with introns (supercontig.fasta files) and an intronerate.gff file (that stores exon/intron boundary information) for each gene.
