@@ -7,14 +7,19 @@ WhatsHap: https://whatshap.readthedocs.io/en/latest/
 
 GATK: https://gatk.broadinstitute.org/hc/en-us      --------------|
                                                                   |
+                                                                  
 Picard: https://github.com/broadinstitute/picard                  |
                                                                   |
+                                                                  
 BCFtools: https://github.com/samtools/bcftools                    |
                                                                   |
+                                                                  
 SAMtools: https://github.com/samtools/samtools                    |
                                                                   |
+                                                                  
 MACSE: https://bioweb.supagro.inra.fr/macse/                      |
                                                                   |
+                                                                  
 trimAl: http://trimal.cgenomics.org                 --------------|
 
 
