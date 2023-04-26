@@ -18,7 +18,7 @@ MACSE: https://bioweb.supagro.inra.fr/macse/
 trimAl: http://trimal.cgenomics.org
 
 ----------------------------------------------------
-All of these programs (except for WhatsHap) are packaged and compiled to be downloaded from here.
+For ease of use, we have compiled and packaged all of these programs (except for WhatsHap); they can be downloaded from here.
 
 WhatsHap should be installed using Anaconda, and the lines to activate conda environment containing WhatsHap should be altered in the wrapper 'script3_phase_extract_align.sh' or 'subscript3.1_phase_alleles_with_whatshap.sh' (the latter if you're running WhatsHap independently of other scripts).
 
