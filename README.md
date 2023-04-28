@@ -3,19 +3,19 @@ Pipeline for generating phased allele sequences from target capture data after p
 Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts/tree/master/alleles_workflow), but updated to use newer software versions which break the original workflow, and with re-formatted scripts to make it easier to run on any given batch of data.
 
 ## Dependencies:
-WhatsHap: https://whatshap.readthedocs.io/en/latest/
+WhatsHap (v1.7): https://whatshap.readthedocs.io/en/latest/
 
 GATK (v4.3.0.0): https://gatk.broadinstitute.org/hc/en-us
 
 Picard(v2.27.5): https://github.com/broadinstitute/picard
 
-BCFtools: https://github.com/samtools/bcftools
+BCFtools (v1.15): https://github.com/samtools/bcftools
 
-SAMtools: https://github.com/samtools/samtools
+SAMtools (v1.16.1): https://github.com/samtools/samtools
 
-MACSE: https://bioweb.supagro.inra.fr/macse/
+MACSE (v2.06): https://bioweb.supagro.inra.fr/macse/
 
-trimAl: http://trimal.cgenomics.org
+trimAl (v1.2rev59): http://trimal.cgenomics.org
 
 ----------------------------------------------------
 For some ease of use, we have compiled and packaged all of these programs (except for WhatsHap) for Linux; they can be downloaded from [here](https://drive.google.com/file/d/1RCNR2igO-PDMy1WqSNhAQTiGFUOnn1a0/view?usp=sharing).
