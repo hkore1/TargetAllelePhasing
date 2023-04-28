@@ -5,9 +5,9 @@ Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts
 ## Dependencies:
 WhatsHap: https://whatshap.readthedocs.io/en/latest/
 
-GATK: https://gatk.broadinstitute.org/hc/en-us
+GATK (v4.3.0.0): https://gatk.broadinstitute.org/hc/en-us
 
-Picard: https://github.com/broadinstitute/picard
+Picard(v2.27.5): https://github.com/broadinstitute/picard
 
 BCFtools: https://github.com/samtools/bcftools
 
