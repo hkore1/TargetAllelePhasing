@@ -7,7 +7,7 @@ WhatsHap (v1.7): https://whatshap.readthedocs.io/en/latest/
 
 GATK (v4.3.0.0): https://gatk.broadinstitute.org/hc/en-us
 
-Picard(v2.27.5): https://github.com/broadinstitute/picard
+Picard (v2.27.5): https://github.com/broadinstitute/picard
 
 BCFtools (v1.15): https://github.com/samtools/bcftools
 
