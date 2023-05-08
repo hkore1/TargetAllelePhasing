@@ -70,6 +70,7 @@ mv exon $outfolder
 mv macse $outfolder
 mv exon_trimmed $outfolder
 
+# Generate mapping file for Astral-Pro (relies on the python script 'generate_AstralPRO_mapping_file.py', from https://github.com/hkore1/python_scripts/blob/main/generate_AstralPRO_mapping_file.py)
 for file in $outfolder/exon_trimmed/*.FNA; do generate_AstralPRO_mapping_file.py $file; done
 cat $outfolder/exon_trimmed/*.txt > $outfolder/AstralPro_mapping_duplicates.txt
 rm $outfolder/exon_trimmed/*_apro_mapping.txt
