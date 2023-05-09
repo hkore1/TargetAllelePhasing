@@ -36,7 +36,7 @@ do
   # Extract tar file
   tar -xf "${dir%/}/$prefix.tar.gz"
 
-  # Concatenate intron sequences into single fasta file
+  # Concatenate supercontig sequences into single fasta file
   for file in "$prefix"/*/"$prefix"/sequences/intron/*_supercontig.fasta
   do
     filename=$(basename "$file")
