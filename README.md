@@ -30,7 +30,7 @@ We use a wrapper script for HybPiper2 (based on https://github.com/Royal-Botanic
 If you have run HybPiper using a method that does not tar these files, then comment out line 37 of the script 'script1_concat_hp2_supercontigs_and_introns_rename.sh' ("`tar -xf "${dir%/}/$prefix.tar.gz`").
 
 ## Step 1: Concatenate HybPiper2 supercontig and intronerate files
-Run `bash concat_hp2_supercontigs_and_introns_rename.sh <hp2_results_directory>`. 
+Run `bash script1_concat_hp2_supercontigs_and_introns_rename.sh <hp2_results_directory>`. 
 
 Note: 'hp2_results_directory' is a directory containing HP2 output folders for each sample in your dataset.
 
