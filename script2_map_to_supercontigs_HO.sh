@@ -34,6 +34,9 @@ module load java/17.0.1
 output_dir="1_New_References"
 mkdir $output_dir
 
+# Create stored copy of the supercontigs folder, as these files are moved out of the folder during the below for loop.
+cp -r $1 supercontigs_stored/
+
 # Initialise for loop and specify input variables
 for supercontig_file in "$supercontig_dir"/*.supercontigs.fasta; do
     filename=$(basename "$supercontig_file" .supercontig.fasta)
@@ -139,3 +142,6 @@ for supercontig_file in "$supercontig_dir"/*.supercontigs.fasta; do
     echo -e '______________________\n'
 
 done
+
+# Remove empty supercontigs folder
+rm -r $1
