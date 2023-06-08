@@ -40,8 +40,8 @@ for supercontig_file in "$supercontig_dir"/*.supercontigs.fasta; do
     prefix=${filename%%.*}
     read1suffix="R1.fastq.gz"
     read2suffix="R2.fastq.gz"
-    read1fq="$(pwd)/$(find $read_dir -name "${prefix}_*${read1suffix}")"
-    read2fq="$(pwd)/$(find $read_dir -name "${prefix}_*${read2suffix}")"
+    read1fq="$(find $read_dir -name "${prefix}_*${read1suffix}")"
+    read2fq="$(find $read_dir -name "${prefix}_*${read2suffix}")"
 
     supercontig_filename=$prefix.supercontigs.fasta
     supercontig_path=$(dirname "$supercontig_file")
