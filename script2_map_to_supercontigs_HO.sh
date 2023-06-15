@@ -143,5 +143,3 @@ for supercontig_file in "$supercontig_dir"/*.supercontigs.fasta; do
 
 done
 
-# Remove empty supercontigs folder
-rm -r $1
