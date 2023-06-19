@@ -35,7 +35,7 @@ output_dir="1_New_References"
 mkdir -p $output_dir
 
 # Create stored copy of the supercontigs folder, as these files are moved out of the folder during the below for loop.
-cp -r $supercontig_dir supercontigs_stored/
+cp -r $supercontig_dir/* supercontigs_stored/
 
 # Initialise for loop and specify input variables
 for supercontig_file in "$supercontig_dir"/*.supercontigs.fasta; do
