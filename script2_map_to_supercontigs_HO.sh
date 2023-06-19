@@ -32,7 +32,7 @@ module load samtools/1.16.1
 module load java/17.0.1
 
 output_dir="1_New_References"
-mkdir $output_dir
+mkdir -p $output_dir
 
 # Create stored copy of the supercontigs folder, as these files are moved out of the folder during the below for loop.
 cp -r $1 supercontigs_stored/
