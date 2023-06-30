@@ -39,6 +39,8 @@ Run `bash script2_map_to_supercontigs.sh <supercontig_directory> <read_directory
 
 Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step 1. 'read_directory' is the directory containing reads used for the initial HybPiper assembly.
 
+This step requires multiple CPUs and is rather slow (~ 1 hr per sample average).
+
 ## Step 3: Generate phased sequences and extract exons, introns and supercontigs
 Run `bash script3_phase_extract_align.sh <gene_list_file>`
 
