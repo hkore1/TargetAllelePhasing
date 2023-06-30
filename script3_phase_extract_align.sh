@@ -23,7 +23,7 @@ start_directory=$(pwd)
 rm -rf 2_Phased_Sequences
 mkdir 2_Phased_Sequences
 
-## Make sure to set this!! (path to subscript3.4 script)
+## Make sure to set these!! (Path to subscript3.4 script)
 Step4_subscript_path="/data/projects/punim1517/scripts/AllelePhaser_scripts/subscript3.4_intron_exon_extractor.py"
 
 
@@ -73,9 +73,11 @@ module load parallel/20210322
 
 set -eo pipefail
 
+genelist_file=$1
+
 for directory in */ ; do
     prefix="${directory///}"
-    bash subscript3.2_extract_phase_bcftools.sh $prefix
+    bash subscript3.2_extract_phase_bcftools.sh $prefix $genelist_file
 done
 
 
