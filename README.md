@@ -42,7 +42,7 @@ Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step
 This step requires multiple CPUs and is rather slow (~ 1 hr per sample average).
 
 ## Step 3: Generate phased sequences and extract exons, introns and supercontigs
-Run `bash script3_phase_extract_align.sh <gene_list_file>`
+Run `bash script3_phase_extract_align.sh <full/path/to/gene_list_file>`
 
 This is a wrapper script to perform functions in 4 subscripts that:
 1. Phase alleles from IUPAC reference supercontigs (with WhatsHap)
