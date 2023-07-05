@@ -53,6 +53,11 @@ do
     cat "$file" | sed "s/$prefix/$filename/g" >> "$prefix".intronerate.fasta
   done
 
+  # Rename sequences in supercontig files so that the locus name and sample name are separated by "---"
+  prefix_init_sep="_$prefix"
+  prefix_new_sep="---$prefix"
+  sed -i '' -e "s/${prefix_init_sep}/${prefix_new_sep}/g" "$prefix".supercontigs.fasta
+
   # Move output files to respective output directories
   mv "$prefix".supercontigs.fasta supercontigs/
   mv "$prefix".intronerate.fasta intronerate/
