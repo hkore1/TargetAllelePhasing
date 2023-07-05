@@ -111,10 +111,8 @@ for seqType in [prefix+"_exon",prefix+"_intron",prefix+"_supercontig"]:
     os.makedirs(seqType)
 
 for gene in supercontig_dict:
-    geneName = gene.split("_")[0]
-    sampleName = gene.split("_")[1]
-    #geneName = gene.split("---")[0]
-    #sampleName = gene.split("---")[1]
+    geneName = gene.split("---")[0]
+    sampleName = gene.split("---")[1]
             
     with open(prefix+"_exon/{}.{}.FNA".format(geneName,dataType),'a') as exonout:
         newseq = ''
