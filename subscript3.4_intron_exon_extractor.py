@@ -49,7 +49,7 @@ for line in open(gff_fn):
                 intron_dict[line[0]] = [(int(line[3])-1,int(line[4]))]
     except IndexError:
         pass
-exon_dict = {f'{k}_'+prefix: v for k, v in exon_dict.items()} # reformat dict to same style as supercontig dict
+exon_dict = {f'{k}---'+prefix: v for k, v in exon_dict.items()} # reformat dict to same style as supercontig dict
 
 
 
