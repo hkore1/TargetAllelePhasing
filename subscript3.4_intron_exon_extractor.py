@@ -123,61 +123,13 @@ for gene in supercontig_dict:
         for gff_interval in exon_dict[exonLookupName]:
             newseq += supercontig_dict[gene].seq[gff_interval[0]:gff_interval[1]]
         exonout.write(">{}\n{}\n".format(sampleName,newseq))
-    ### Block to add '_h1' and '_h2' suffix to sequences in the fasta if dataType == 'alleles'
-    if dataType == "alleles":    
-        with open(prefix+"_exon/{}.{}.FNA".format(geneName,dataType), 'r+') as fp:
-            content=fp.readlines()
-            line_string=[]
-            x = len(content)
-            if x == 4:
-                for line in content:
-                    line_string.append(line)
-                line_string[0] = line_string[0].replace("\n","_h1\n")
-                line_string[2] = line_string[2].replace("\n","_h2\n")
-                content[0] = line_string[0]
-                content[2] = line_string[2]
-                with open(prefix+"_exon/{}.{}.FNA".format(geneName,dataType), 'w') as fp:
-                    for line in content:
-                        fp.write(line)
 
     with open(prefix+"_intron/{}.intron.{}.fasta".format(geneName,dataType),'a') as intronout:
         newseq=''
         for gff_interval in intron_dict[exonLookupName]:
             newseq += supercontig_dict[gene].seq[gff_interval[0]:gff_interval[1]]
         intronout.write(">{}\n{}\n".format(sampleName,newseq))
-    ### Block to add '_h1' and '_h2' suffix to sequences in the fasta if dataType == 'alleles'
-    if dataType == "alleles":    
-        with open(prefix+"_intron/{}.intron.{}.fasta".format(geneName,dataType), 'r+') as fp:
-            content=fp.readlines()
-            line_string=[]
-            x = len(content)
-            if x == 4:
-                for line in content:
-                    line_string.append(line)
-                line_string[0] = line_string[0].replace("\n","_h1\n")
-                line_string[2] = line_string[2].replace("\n","_h2\n")
-                content[0] = line_string[0]
-                content[2] = line_string[2]
-                with open(prefix+"_intron/{}.intron.{}.fasta".format(geneName,dataType), 'w') as fp:
-                    for line in content:
-                        fp.write(line)
     
     with open(prefix+"_supercontig/{}.supercontig.{}.fasta".format(geneName,dataType),'a') as supercontigout:
         supercontigout.write(">{}\n{}\n".format(sampleName,supercontig_dict[gene].seq))
-    ### Block to add '_h1' and '_h2' suffix to sequences in the fasta if dataType == 'alleles'
-    if dataType == "alleles":    
-        with open(prefix+"_supercontig/{}.supercontig.{}.fasta".format(geneName,dataType), 'r+') as fp:
-            content=fp.readlines()
-            line_string=[]
-            x = len(content)
-            if x == 4:
-                for line in content:
-                    line_string.append(line)
-                line_string[0] = line_string[0].replace("\n","_h1\n")
-                line_string[2] = line_string[2].replace("\n","_h2\n")
-                content[0] = line_string[0]
-                content[2] = line_string[2]
-                with open(prefix+"_supercontig/{}.supercontig.{}.fasta".format(geneName,dataType), 'w') as fp:
-                    for line in content:
-                        fp.write(line)
         
