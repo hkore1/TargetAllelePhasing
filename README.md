@@ -13,7 +13,7 @@ BCFtools (v1.15): https://github.com/samtools/bcftools
 
 SAMtools (v1.16.1): https://github.com/samtools/samtools
 
-MACSE (v2.06): https://bioweb.supagro.inra.fr/macse/
+MACSE (v2.06): https://bioweb.supagro.inra.fr/macse/ ##Change to MAFFT
 
 trimAl (v1.2rev59): http://trimal.cgenomics.org
 
@@ -53,3 +53,6 @@ This is a wrapper script to perform functions in 4 subscripts that:
 Notes: "gene_list_file" is either a .txt file (pre made by the user) containing the list of gene names, or the user can specify the string "Angiosperms353" to generate this file automatically if they are using the Angiosperms353 genes. Make sure to set the variable `Step4_subscript_path` as a path to 'subscript3.4_intron_exon_extractor.py'
 
 It is probably preferable to run these subscripts individually whilst setting up and/or troubleshooting the pipeline.
+
+## Step 4: Combine, align and trim
+TO-DO
