@@ -55,4 +55,6 @@ Notes: "gene_list_file" is either a .txt file (pre made by the user) containing 
 It is probably preferable to run these subscripts individually whilst setting up and/or troubleshooting the pipeline.
 
 ## Step 4: Combine, align and trim
-Run 'join_phased_sequences_ambiguities.sh' from the directory containing . This joins the IUPAC-coded sequences of all samples into multifasta files for each locus.
+Run 'join_phased_sequences_ambiguities.sh' from the directory containing the '2_Phased_Sequences' folder. This joins the IUPAC-coded sequences of all samples into multifasta files for each locus.
+
+These files can then be aligned and trimmed/cleaned however is preferred.
