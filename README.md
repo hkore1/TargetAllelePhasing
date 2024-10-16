@@ -22,6 +22,9 @@ For some ease of use, we have compiled and packaged all of these programs (excep
 
 WhatsHap should be installed using Anaconda, and the lines to activate conda environment containing WhatsHap should be altered in the wrapper 'script3_phase_extract_align.sh' or 'subscript3.1_phase_alleles_with_whatshap.sh' (the latter is only necessary if you're running WhatsHap independently of other scripts).
 
+Please note that some scripts contain lines for initialising modules specific to the HPC system that we used. These will likely need to be adjusted for other systems.
+
+
 ## Before running the pipeline
 HybPiper must have already been run, using the `--run_intronerate` function to generate supercontigs with introns (supercontig.fasta files) and an intronerate.gff file (that stores exon/intron boundary information) for each gene.
 
@@ -55,6 +58,6 @@ Notes: "gene_list_file" is either a .txt file (pre made by the user) containing 
 It is probably preferable to run these subscripts individually whilst setting up and/or troubleshooting the pipeline.
 
 ## Step 4: Combine, align and trim
-Run 'join_phased_sequences_ambiguities.sh' from the directory containing the '2_Phased_Sequences' folder. This joins the IUPAC-coded sequences of all samples into multifasta files for each locus.
+Run 'script4_join_phased_sequences_ambiguities.sh' from the directory containing the '2_Phased_Sequences' folder. This joins the IUPAC-coded sequences of all samples into multifasta files for each locus.
 
 These files can then be aligned and trimmed/cleaned however is preferred. The steps we used for this are detailed in the bloodwood eucalypt paper.
