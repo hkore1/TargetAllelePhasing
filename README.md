@@ -1,5 +1,5 @@
 # TargetAllelePhasing
-Pipeline for generating phased allele sequences from target capture data after processing with HybPiper.
+Pipeline for generating phased allele or ambiguity sequences from target capture data after processing with HybPiper.
 Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts/tree/master/alleles_workflow), but updated to use newer software versions which break the original workflow, and with re-formatted scripts to make it easier to run on any given batch of data.
 
 ## Dependencies:
@@ -12,8 +12,6 @@ Picard (v2.27.5): https://github.com/broadinstitute/picard
 BCFtools (v1.15): https://github.com/samtools/bcftools
 
 SAMtools (v1.16.1): https://github.com/samtools/samtools
-
-MACSE (v2.06): https://bioweb.supagro.inra.fr/macse/ ##Change to MAFFT
 
 trimAl (v1.2rev59): http://trimal.cgenomics.org
 
@@ -45,7 +43,7 @@ Note: 'supercontig_directory' is the 'supercontigs' folder generated during Step
 This step requires multiple CPUs and is rather slow (~ 1 hr per sample average).
 
 ## Step 3: Generate phased sequences and extract exons, introns and supercontigs
-Run `bash script3_phase_extract_align.sh <full/path/to/gene_list_file>`
+Run `bash script3_phase_extract.sh <full/path/to/gene_list_file>`
 
 This is a wrapper script to perform functions in 4 subscripts that:
 1. Phase alleles from IUPAC reference supercontigs (with WhatsHap)
