@@ -57,4 +57,4 @@ It is probably preferable to run these subscripts individually whilst setting up
 ## Step 4: Combine, align and trim
 Run 'join_phased_sequences_ambiguities.sh' from the directory containing the '2_Phased_Sequences' folder. This joins the IUPAC-coded sequences of all samples into multifasta files for each locus.
 
-These files can then be aligned and trimmed/cleaned however is preferred.
+These files can then be aligned and trimmed/cleaned however is preferred. The steps we used for this are detailed in the bloodwood eucalypt paper.
