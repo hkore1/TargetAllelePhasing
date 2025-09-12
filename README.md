@@ -4,7 +4,7 @@ Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts
 
 Briefly, the method was performed as follows: 
 
-"Ambiguity-coded sequences were assembled in two steps: (1) SAMtools (Danecek et al., 2021), BWA–MEM (Li, 2013) in BWA v. 0.7.17 and Picard (Picard Toolkit, 2019) were used to generate BAM alignments for each locus of each sample, with the initial consensus sequences from HybPiper used as references; (2) From the BAM alignments, GATK v. 4.3.0.0 (McKenna et al., 2010; Poplin et al., 2017) was used for identifying and calling allelic variants, retaining SNP sites and generating new consensus sequences with IUPAC ambiguity codes at SNP sites. Exon and intron sequences were then extracted from the consensus sequences using the script ‘subscript3.4_intron_exon_extractor.py’."
+Ambiguity-coded sequences were assembled in two steps: (1) SAMtools (Danecek et al., 2021), BWA–MEM (Li, 2013) in BWA v. 0.7.17 and Picard (Picard Toolkit, 2019) were used to generate BAM alignments for each locus of each sample, with the initial consensus sequences from HybPiper used as references; (2) From the BAM alignments, GATK v. 4.3.0.0 (McKenna et al., 2010; Poplin et al., 2017) was used for identifying and calling allelic variants, retaining SNP sites and generating new consensus sequences with IUPAC ambiguity codes at SNP sites. Exon and intron sequences were then extracted from the consensus sequences using the script ‘subscript3.4_intron_exon_extractor.py’.
 
 ## Dependencies:
 WhatsHap (v1.7): https://whatshap.readthedocs.io/en/latest/
