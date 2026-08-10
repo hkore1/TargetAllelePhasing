@@ -2,7 +2,7 @@
 Pipeline for generating phased allele or ambiguity sequences from target capture data after processing with HybPiper.
 Based on the workflow detailed here (https://github.com/mossmatters/phyloscripts/tree/master/alleles_workflow), but updated to use newer software versions which break the original workflow, and with re-formatted scripts to make it easier to run on any given batch of data.
 
-Used in the paper 'Temporal dynamics of incomplete lineage sorting, introgression and divergence in eucalypts distributed across an expansive and ancient landscape' (https://doi.org/10.1093/aob/mcag242).
+Used in the paper: Harvey K Orel, Rachael M Fowler, Todd G B McLay, David J Cantrill, Donald C Franklin, Daniel J Murphy, Michael J Bayly, Temporal dynamics of incomplete lineage sorting, introgression and divergence in eucalypts distributed across an expansive and ancient landscape, Annals of Botany, 2026; mcag242, https://doi.org/10.1093/aob/mcag242
 
 Briefly, the method was performed as follows: 
 
